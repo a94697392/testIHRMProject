@@ -24,3 +24,4 @@ with open(report_path,"wb")as f:
     runner =HTMLTestRunner_PY3.HTMLTestRunner(f,verbosity=1,title="ihrm登陆接口功能测试",description="这是一个更加美观的报告")
     # 使用实例化的runner运行测试套件，生成测试报告
     runner.run(suite)
+print("测试会不会触发轮形")
