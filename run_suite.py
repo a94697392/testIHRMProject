@@ -17,8 +17,8 @@ suite =unittest.TestSuite()
 suite.addTest(unittest.makeSuite(TestIHRMEmployee))
 suite.addTest(unittest.makeSuite(TestIHRMLogin))
 # 4.定义报告的目录和报告的名称
-# report_path = BASE_DIR + "/report/tpshop{}.html".format(time.strftime("%Y%m%d%H%M%S"))
-report_path = BASE_DIR + "/report/tpshop.html"
+# report_path = BASE_DIR + "/report/ihrm{}.html".format(time.strftime("%Y%m%d%H%M%S"))
+report_path = BASE_DIR + "/report/ihrm.html"
 # 5.使用HTMLTestRunner_PY3生成测试报告
 with open(report_path,"wb")as f:
     runner =HTMLTestRunner_PY3.HTMLTestRunner(f,verbosity=1,title="ihrm登陆接口功能测试",description="这是一个更加美观的报告")
